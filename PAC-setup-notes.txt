@@ -1,0 +1,180 @@
+*** PAC setup notes ***
+
+MRB
+Tue 25-Jun-2019
+
+There are four principal steps to setting up a new computer as a public
+access computer (PAC):
+
+     * Install KioWare
+     * Add users to the Administrator Group (these are users with PAC
+       maintenance responsibilities)
+     * Enable remote access
+     * Enable concurrent connections
+
+(1) To install KioWare kiosk software
+* Log into the workstation using own MacEwan University network account
+and password
+* Create a new local user account called "publicaccess"
+- Type "user accounts" and hit Enter
+- In the "Other users" section, click the "+" sign for "Add someone else
+to this PC"
+- Click on "I don't have this person's sign-in information"
+- Click on "Add a user without a Microsoft account"
+- In the "User name" textbox, make the username "publicaccess"
+- For the password for the public access account, make it "puBl1kacce55F3"
+("el" followed by "one")
+- Click "Next"
+- Sign out of your network account on the PAC, and log in with the new
+local publicaccess account
+- Sign out of the local publicaccess account, and log back in with your
+network account
+* Add new entries to the Windows registry to enable automatic logging into the
+newly created account called "publicaccess"
+- Navigate to the following Windows registry key:
+Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\
+Winlogon
+- In the Winlogon key, create a new String Value; rename this new string
+"DefaultUserName"
+- Double click on DefaultUserName and give it a "Value data" entry of
+"ad\publicaccess"
+- In the Winlogon key, create a new String Value; rename this new string
+"DefaultPassword"
+- Double click on DefaultPassword and give it a "Value data" entry of
+"puBl1kacce55F3" ("el" followed by "one")
+* Install the KioWare software application
+- Double click on KioWareClientSetup.exe executable file
+- Step through the dialog screens to finish installing KioWare; don't need to
+worry about configuration settings, as these will all be contained in the
+KioWare config file ("KioWareClientSettings.kwconfig") that you will copy
+over next
+* Copy over the master copies of the "ConfigToolSettings.json" and
+"KioWareClientSettings.kwconfig"
+- Copy over the files "ConfigToolSettings.json" and
+"KioWareClientSettings.kwconfig" that contain all of the KioWare settings
+to the new installation and replace the existing files on the PAC -- the path
+to copy the files is the following:
+C:\ProgramData\KioWare Client\KioWare
+- Copy over and replace these two files -- the other two files,
+"MachineConfig.json" and "sqlite3.dll" can be left as is
+("MachineConfig.json" will contain the licensing information when you add
+it later)
+* Copy over and  replace the UserData directory on the PAC with the master
+copy of the UserData directory
+- Copy the master copy of "UserData" to the PAC -- the path to copy the
+UserData directory is the following:
+C:\ProgramData\KioWare Client 
+(this directory contains various KioWare customizations, including custom
+toolbar images, and custom toolbar JavaScript code)
+* Add licensing information
+- Launch "Kioware Config Tool"
+- Click on "License" tab, and add the "Transaction Number" and the
+"Authorization Code", which are provided on the KioWare "License Certificate"
+PDF document
+- Click on the "Get Electronic License" button, which will autopopulate the
+rest of the licensing information
+* Enable automatic Windows log in, and make KioWare the shell rather than
+explorer.exe
+- Launch "KioWare Config Tool"
+- Click on "System Settings" tab
+- In the "Windows AutoLogon Settings" section, click the slider to "ON"
+- Again in the Windows AutoLogon Settings section, in the Username and
+Password boxes add "ad\publicaccess" as the username and provide the
+publicaccess account's password "puBl1kacce55F3" ("el" followed by "one");
+click the "Test AutoLogon" button to see if the credentials are correct
+- In the "Utility to Change User Settings (including their Shell)" pane,
+provide the username, which is "ad.macewan.ca\publicaccess", and provide
+the "publicaccess" account's password, "puBl1kacce55F3" ("el" followed by
+"one")
+- In the next dialog box, select the second radio button option to make
+KioWare the shell process
+- Reboot the workstation; workstation will automatically log into the
+"publicaccess" acount, and automatically launch KioWare as the default
+shell process
+
+(2) To add a user to the Administrator Group
+* Log out of KioWare kiosk mode, and then log in with your network account
+- Key combination to get exit action code dialog box: Alt-F4
+- Exit action code password to exit KioWare: 1971
+- Log in with your own network username and password
+* Run ==> compmgmt.msc
+* From the Computer Management screen that opens, go to
+Local Users and Groups ==> Groups ==> Administrators
+* Then click the Add button
+- The users with Administrator Group privileges are ad\brundinm,
+and ad\mccreadys
+
+(3) To enable remote access
+- Type remote in the search box
+- Select "Allow remote access to your computer"
+- On the Remote tab, in the "Remote Desktop" pane, ensure that "Allow
+remote connections to this computer" is selected
+- Click on the "Select Users..." button, then click on the "Add" button
+to add users who can remotely access the public access workstation
+- The users with remote access privileges are ad\brundinm, and
+ad\mccreadys
+
+(4) To enable concurrent connections
+* There used to be two ways to enable concurrent connections: modifying
+the termsrv.dll file, or installing RDP Wrapper.  The use of Sophos
+Endpoint antivirus software means that we can no longer install RDP
+Wrapper (Sophos deletes files during installation which prevents the
+installation of RDP Wrapper).  Note: the two downstairs PACs are using
+RDP Wrapper to enable concurrent connections, and the two upstairs PACs
+are using modified termsrv.dll files to enable concurrent connections.
+
+* To modify the termsrv.dll file
+- termsrv.dll is located in C:\Windows\System32
+- Make copy of termsrv.dll file in the System32 directory called
+termsrv.dll.orig.bak
+- Copy PAC termsrv.dll to your own computer, where you will have full
+rights to the file
+- Use HxD hex editor to search and replace a string pattern
+search: 39 81 3C 06 00 00 0F 84 3B 2B 01 00
+replace: B8 00 01 00 00 89 81 38 06 00 00 90
+Make sure in "Search -> Replace" that you click on Hex-values tab before
+you search and replace 
+Note: the latest (Windows 10 Version 1709 [OS Build 16299.1150])
+termsrv.dll file version is 10.0.17763.437
+- Save modified termsrv.dll file
+- Make copy of modified termsrv.dll called termsrv.dll.rev.bak and copy
+it into the PAC's System32 directory
+- Stop Terminal Service:
+net stop termservice
+- To take ownership of the original PAC termsrv.dll file, and then
+give yourself full control, do the following:
+- To first take ownership of the file, do the following:
+- Right click on termsrv.dll and select Properties -> Security tab
+- Click Advanced button
+- Click "Change" link
+- Click Advanced button
+- Provide your name in the text area pane, e.g., "brundinm"
+- Click OK, and then click OK again; need to completely exit from all
+dialog boxes to have ownership of the file
+- To next grant full access control over the file to your account, do
+the following:
+- Right click on termsrv.dll and select Properties -> Security tab
+- Click Advanced button
+- Under the Permissions tab, click the Add button
+- Click on the "Select a principal" link
+- Provide your name in the text area pane, e.g., "brundinm"
+- Click OK
+- In the Permission Entry dialog box in the "Basic permissions:" pane,
+select the "Full control" checkbox
+- Click OK, and then click Apply
+- Click OK, and then click OK again
+- Copy modified termsrv.dll file from your computer or flash drive to
+overwrite and replace the PAC termsrv.dll file
+- Start Terminal Service:
+net start termservice
+- Reboot computer
+
+* To install RDP Wrapper (RDPWrap)
+- Unzip the ZIP file archive of RDPWrap
+- Launch CMD as an Administrator
+- Navigate to the unzipped RDPWrap directory
+- Type "install"
+- Check that it has been installed correctly by using File Explorer to
+double-click on RDPConf.exe
+- Move the RDPWrap-v1.6.2.zip installation ZIP file to
+C:\Program Files\RDPWrap in case you need to reinstall RDP Wrapper

@@ -1,0 +1,3636 @@
+﻿{
+  "_saveId": "AUK1S5DYC1BRIBPO93G5UP773R",
+  "_version": 30,
+  "_appRev": 5179,
+  "browser": {
+    "hideScrollbars": 0,
+    "popupMode": 1,
+    "maxOpenBrowsers": 20,
+    "ignoreSSLErrors": true,
+    "logScriptErrors": false,
+    "userAgentInsert": null,
+    "overwriteUserAgent": false,
+    "confirmPrint": true,
+    "confirmPrintMsg": "Are you sure you want to print?",
+    "showPrintedMsg": false,
+    "printedMsg": "Attempting to print.",
+    "delayCloseAfterPrintMs": -1,
+    "preLoadDomainHtml": " ",
+    "geolocation": {
+      "mode": 0,
+      "googleApiKey": "ci/evIOTi8Ykjz1DN9mGhvBSYqTEQJE1zzZrv3SHYgrU+3Ce1qiXlCVvQN8KEcX6LQNcA+Dd/hx4bKJcUjLLKLOyu1gRYGB8IjVwd6wDR2Qw6DvwboSAw9yPs+2cAafJpHcIJdY7sRYC",
+      "staticLocation": {
+        "latitude": 0.0,
+        "longitude": 0.0,
+        "accuracy": 0.0,
+        "altitude": {
+          "Bool": false,
+          "Value": 0.0
+        },
+        "altitudeAccuracy": {
+          "Bool": false,
+          "Value": 0.0
+        }
+      }
+    },
+    "customJavaScriptAllPages": "",
+    "customJavaScriptAllPagesInline": "",
+    "customJavaScriptAllPagesNoDocReady": "",
+    "parentElCustomJavaScriptAllPages": "body",
+    "overrideDomUploadCapture": false,
+    "enableTouchEvents": false,
+    "disablePinchZoom": false,
+    "debuggingPort": 0,
+    "disableErrorRedirection": 1,
+    "chromeFlags": "",
+    "engineLogRotations": 0,
+    "debugDocReady": false,
+    "downloadManager": {
+      "rules": [
+        {
+          "isSystemRule": true,
+          "name": "PDF Document",
+          "action": 3,
+          "mimeType": "^application/(x-)?pdf$",
+          "mimeTypeIsRegex": true,
+          "showGuiTiming": 1,
+          "showPickLocation": false
+        },
+        {
+          "isSystemRule": true,
+          "name": "Octet Stream",
+          "action": 3,
+          "mimeType": "application/octet-stream",
+          "mimeTypeIsRegex": false,
+          "showGuiTiming": 1,
+          "showPickLocation": false
+        },
+        {
+          "name": "HTML file",
+          "action": 3,
+          "mimeType": "text/html",
+          "mimeTypeIsRegex": false,
+          "showGuiTiming": 1,
+          "showPickLocation": false
+        },
+        {
+          "name": "Text .txt file",
+          "action": 3,
+          "mimeType": "text/plain",
+          "mimeTypeIsRegex": false,
+          "showGuiTiming": 1,
+          "showPickLocation": false
+        },
+        {
+          "name": "Image file",
+          "action": 3,
+          "mimeType": "^image.*$",
+          "mimeTypeIsRegex": true,
+          "showGuiTiming": 1,
+          "showPickLocation": false
+        }
+      ],
+      "emptyMimeRule": {
+        "isSystemRule": true,
+        "name": "Empty or Missing Mime Match",
+        "action": 4,
+        "mimeType": "^$",
+        "mimeTypeIsRegex": true,
+        "showGuiTiming": 0,
+        "showPickLocation": false
+      },
+      "mimeFromExtOverrides": {
+        "exe": "application/exe"
+      },
+      "enableLogging": false
+    },
+    "autoActions": [],
+    "javascriptWatchdog": [],
+    "acceptLanguages": []
+  },
+  "general": {
+    "servicePipeOperationTimeoutSeconds": 0,
+    "remoteSettingsOption": 0,
+    "remoteSettingsPollTs": 9000000000,
+    "remoteSettingsUrl": null,
+    "remoteSettingsRetryCount": 2,
+    "remoteSettingsRetryDelay": 100000000,
+    "remoteSettingsSSLIgnoreFlags": -1,
+    "remoteSettingsCredentials": {
+      "Bool": false,
+      "Value": "bQFXNoUy5aPjM8tZjfoOe25w8QaOK2Xpco+J/NNyQULW73LDhNl093C7tMZ0TXWjUo3BFpIDwOTtaammN+WzKkaLSqo="
+    },
+    "remoteSettingsClientCert": {
+      "enabled": false,
+      "location": 1,
+      "thumbprint": ""
+    },
+    "send100ContinueBeforeDotNetRequests": false,
+    "webClientSSLProcotols": 0,
+    "ScheduledTasks": [
+      {
+        "Description": "Shutdown Kiosk - Mon to Thu at 10:55 p.m.",
+        "Task": 3,
+        "Parameters": {},
+        "Schedule": {
+          "Id": "c0abf395-b640-47f5-8d93-0950b595fda2",
+          "Description": "",
+          "Mode": 1,
+          "Interval": 1,
+          "ActiveStartDate": 636488928000000000,
+          "ActiveEndDate": 3155378975999999999,
+          "StartTime": 825000000000,
+          "Duration": 0,
+          "Days": 30,
+          "DayOfMonth": 15
+        }
+      },
+      {
+        "Description": "Shutdown  Kiosk - Fri to Sun at 7:55 p.m.",
+        "Task": 3,
+        "Parameters": {},
+        "Schedule": {
+          "Id": "12e7db12-b131-4c3b-8840-582f52ce68b0",
+          "Description": "",
+          "Mode": 1,
+          "Interval": 1,
+          "ActiveStartDate": 636488928000000000,
+          "ActiveEndDate": 3155378975999999999,
+          "StartTime": 717000000000,
+          "Duration": 0,
+          "Days": 97,
+          "DayOfMonth": 15
+        }
+      },
+      {
+        "Description": "Restart KioWare - Mon to Fri at 7:25 a.m.",
+        "Task": 5,
+        "Parameters": {},
+        "Schedule": {
+          "Id": "df2d1a3c-312c-4462-83d1-2356d50e6dc2",
+          "Description": "",
+          "Mode": 1,
+          "Interval": 1,
+          "ActiveStartDate": 636488928000000000,
+          "ActiveEndDate": 3155378975999999999,
+          "StartTime": 267157660000,
+          "Duration": 0,
+          "Days": 62,
+          "DayOfMonth": 31
+        }
+      },
+      {
+        "Description": "Restart KioWare - Sat to Sun at 9:55 a.m.",
+        "Task": 5,
+        "Parameters": {},
+        "Schedule": {
+          "Id": "4f898eef-7f61-436f-8039-f3f893b56e9c",
+          "Description": "",
+          "Mode": 1,
+          "Interval": 1,
+          "ActiveStartDate": 636488928000000000,
+          "ActiveEndDate": 3155378975999999999,
+          "StartTime": 357413870000,
+          "Duration": 0,
+          "Days": 65,
+          "DayOfMonth": 31
+        }
+      },
+      {
+        "Description": "Reboot Kiosk - Mon at 4:00 a.m.",
+        "Task": 4,
+        "Parameters": {},
+        "Schedule": {
+          "Id": "e771d4f4-6fe2-4026-b714-21f9567ef593",
+          "Description": "",
+          "Mode": 1,
+          "Interval": 1,
+          "ActiveStartDate": 636488928000000000,
+          "ActiveEndDate": 3155378975999999999,
+          "StartTime": 144322320000,
+          "Duration": 0,
+          "Days": 2,
+          "DayOfMonth": 31
+        }
+      }
+    ],
+    "allowedPowerOptions": 0,
+    "debugSleepWake": false,
+    "autoStartProcs": [],
+    "IsDeveloperModeOn": false
+  },
+  "userSession": {
+    "isSessionTimerActive": false,
+    "sessionTime": [
+      0,
+      10,
+      0
+    ],
+    "inactivityMode": 1,
+    "inactivityTimerSec": 300,
+    "SecurityDevice": {
+      "type": 0,
+      "sensitivity": 0,
+      "debounceMs": 1000,
+      "name": null,
+      "description": null,
+      "cat": 2,
+      "deviceComPort": null,
+      "serialPortSettings": {
+        "dataEncodingType": 2,
+        "PollMs": 200,
+        "BaudRate": 9600,
+        "Handshake": 0,
+        "RtsDtr": false,
+        "Parity": 0,
+        "DataBits": 8,
+        "StopBits": 1,
+        "ReadBufSize": 8000,
+        "ReadTimeoutMs": 20,
+        "ByteToByteReadTimeoutMs": 100,
+        "WriteTimeoutMs": 1000,
+        "DebounceCnt": 3,
+        "StartSentinelsRead": null,
+        "EndSentinelsRead": null,
+        "StartSentinelRead": 0,
+        "EndSentinelRead": 0,
+        "LengthByteInd": -1,
+        "LengthCompareAddSub": 0,
+        "autoOpenCmdHex": null,
+        "autoOpenRespMatchHex": null,
+        "autoOpenExcludePorts": null
+      },
+      "maxOpenRetries": -1,
+      "readTimeoutMs": -1,
+      "openMatch": null,
+      "useOpenMatchForHidName": false,
+      "pollMs": 0,
+      "appLogGroupName": null,
+      "debug": false,
+      "noWakeLanguageMonitor": false,
+      "getCustomEngIdInfo": false,
+      "mtbfWarnTime": 0,
+      "mtbfErrTime": 0,
+      "statusUploadInterval": {
+        "Bool": false,
+        "Value": 600000
+      }
+    },
+    "inactivityWarning": {
+      "enabled": true,
+      "duration": 100000000,
+      "message": "Your session is about to end.\r\nPress a key on the keyboard or move the\r\nmouse to prevent your session\r\nfrom ending.",
+      "showButtons": false
+    },
+    "customTimeouts": [],
+    "attractDisplays": [
+      {
+        "startPage": "https://library.macewan.ca/",
+        "additionalStartPages": [],
+        "attractLoopSec": 15,
+        "keepAttractPlace": false,
+        "opticZoom": 100.0,
+        "attractOpticZoom": {
+          "Bool": false,
+          "Value": 100.0
+        },
+        "pageLoadOptions": 3,
+        "attractScreens": [],
+        "attractMode": 1,
+        "sessionEndUrlSettings": {
+          "enabled": false,
+          "url": "",
+          "showMs": 8000,
+          "ignoreUserInput": true,
+          "runAfterSessionPurge": true
+        },
+        "contextId": "MainBrowserContext",
+        "simpleLooper": {
+          "contentRoot": "",
+          "showSettings": false,
+          "clock": {
+            "enabled": false,
+            "twentyFourHourFormat": false
+          },
+          "transition": {
+            "transitionNone": false,
+            "transitionFade": true,
+            "transitionSpinFade": false,
+            "transitionZoom": false,
+            "transitionSlideTop": false,
+            "transitionSlideBottom": false,
+            "transitionSlideLeft": false,
+            "transitionSlideRight": false
+          },
+          "looptime": 15000,
+          "transitiontime": 1500,
+          "bufferTimeoutMs": 0,
+          "preload": 4,
+          "loadImagesFromDirectory": true,
+          "enableProofOfPlay": false,
+          "defaultimagesize": "contain",
+          "defaultvideosize": "contain",
+          "slides": []
+        }
+      }
+    ],
+    "clearSessionDataTypes": 274,
+    "privateBrowsingMode": true,
+    "clearHistoryAndSessionCookies": true,
+    "vkContextId": null,
+    "attractContextId": null,
+    "deleteLastContextDelayMs": 700,
+    "closeTabAtSessionEnd": false,
+    "cookiesToKeep": [],
+    "persistantCacheToKeepDir": {
+      "enabled": false,
+      "path": null
+    },
+    "cacheToKeep": [],
+    "soundVolumeLevel": 0,
+    "maxPrintCount": {
+      "Bool": false,
+      "Value": 10
+    },
+    "maxPrintCustomMessageText": {
+      "Bool": false,
+      "Value": "Print denied; max print count reached."
+    },
+    "endSessionInputIgnoreMs": 2000
+  },
+  "userInput": {
+    "keyBlock": 68987912192,
+    "unsafeAltGrMode": 0,
+    "dumpKeys": false,
+    "blockAlt": false,
+    "mouseBlock": 0,
+    "customKeyBlockArr": [],
+    "pointsExitArr": [
+      {
+        "exitPointType": 1
+      },
+      {
+        "exitPointType": 2
+      },
+      {
+        "exitPointType": 3
+      },
+      {
+        "exitPointType": 4
+      }
+    ],
+    "debugPointsExit": false,
+    "hotkeys": [
+      {
+        "key": 80,
+        "mod": 3,
+        "description": "Print",
+        "doOnKeyUp": false,
+        "holdDownAction": null,
+        "holdDownMs": 0,
+        "handlingMethod": 1,
+        "allowThrough": false,
+        "internalActionType": 6,
+        "isCustomLink": false,
+        "customLinkUrl": "",
+        "js": "",
+        "toolbarJs": "",
+        "toolbarNameMatch": "",
+        "audioPath": null,
+        "audioElementId": null
+      },
+      {
+        "key": 113,
+        "mod": 3,
+        "description": "Volume Down",
+        "doOnKeyUp": false,
+        "holdDownAction": null,
+        "holdDownMs": 0,
+        "handlingMethod": 1,
+        "allowThrough": false,
+        "internalActionType": 17,
+        "isCustomLink": false,
+        "customLinkUrl": "",
+        "js": "",
+        "toolbarJs": "",
+        "toolbarNameMatch": "",
+        "audioPath": null,
+        "audioElementId": null
+      },
+      {
+        "key": 114,
+        "mod": 3,
+        "description": "Volume Up",
+        "doOnKeyUp": false,
+        "holdDownAction": null,
+        "holdDownMs": 0,
+        "handlingMethod": 1,
+        "allowThrough": false,
+        "internalActionType": 16,
+        "isCustomLink": false,
+        "customLinkUrl": "",
+        "js": "",
+        "toolbarJs": "",
+        "toolbarNameMatch": "",
+        "audioPath": null,
+        "audioElementId": null
+      }
+    ],
+    "enableNavPadKeyboard": false
+  },
+  "security": {
+    "autoPrint": false,
+    "disableFullySilentPrinting": false,
+    "blockPrinting": false,
+    "showPrintBlockedMsg": true,
+    "logHandledDialogs": false,
+    "enableCrashDetection": true,
+    "enableHangDetection": true,
+    "hangDetectionTimeout": 180,
+    "noDesktopLockdown": false,
+    "exitHandlers": [
+      {
+        "hashedValue": "d0Cg1frVQfEv4S0G+TNbcS4g9WM5R8fx55YnJf/7U/vlV9nN+EsTNawP151P9PFp6FU2G3DFSr4dpG1B+YUA6r3xL6qKwtrLGXgx7w0rtqc=",
+        "userDesc": "Year of MacEwan University's founding (1971)",
+        "actionMask": 1,
+        "paramsNeeded": 0,
+        "requirePasscode": true,
+        "actionData1": null,
+        "showAclWarningPasscodeNavigate": false
+      }
+    ],
+    "useExitHandlers": true,
+    "exitHandlerKeyboardType": 2,
+    "forceLogOffInShellSec": 60,
+    "handledDialogs": [
+      {
+        "name": "On-Screen Keyboard Options",
+        "action": 2,
+        "closeId": 0,
+        "className": "#32770",
+        "titleRegex": "Options",
+        "showHandledMsg": false,
+        "handledMsg": "The Options dialog was blocked",
+        "childControls": [
+          {
+            "name": "Use click sound",
+            "id": 5011,
+            "className": "Button",
+            "txtRegex": "&Use click sound"
+          }
+        ]
+      },
+      {
+        "name": "File Open",
+        "action": 1,
+        "closeId": 2,
+        "className": "#32770",
+        "titleRegex": "[.|\\r|\\n]*",
+        "showHandledMsg": true,
+        "handledMsg": "The File Open dialog was blocked",
+        "childControls": [
+          {
+            "name": "Look in",
+            "id": 1091,
+            "className": "Static",
+            "txtRegex": "Look &in:"
+          },
+          {
+            "name": "File name",
+            "id": 1090,
+            "className": "Static",
+            "txtRegex": "File &name:"
+          },
+          {
+            "name": "Files of Type",
+            "id": 1089,
+            "className": "Static",
+            "txtRegex": "Files of &type:"
+          },
+          {
+            "name": "Open",
+            "id": 1,
+            "className": "Button",
+            "txtRegex": "&Open"
+          }
+        ]
+      },
+      {
+        "name": "File Open 2",
+        "action": 1,
+        "closeId": 2,
+        "className": "#32770",
+        "titleRegex": "[.|\\r|\\n]*",
+        "showHandledMsg": true,
+        "handledMsg": "The File Open dialog was blocked",
+        "childControls": [
+          {
+            "name": "Dropdown List",
+            "id": 1136,
+            "className": "ComboBox",
+            "txtRegex": "[.|\\r|\\n]*"
+          },
+          {
+            "name": "File name",
+            "id": 1090,
+            "className": "Static",
+            "txtRegex": "File &name:"
+          },
+          {
+            "name": "Open",
+            "id": 1,
+            "className": "Button",
+            "txtRegex": "&Open"
+          },
+          {
+            "name": "Cancel",
+            "id": 2,
+            "className": "Button",
+            "txtRegex": "Cancel"
+          }
+        ]
+      },
+      {
+        "name": "File Save",
+        "action": 1,
+        "closeId": 2,
+        "className": "#32770",
+        "titleRegex": "[.|\\r|\\n]*",
+        "showHandledMsg": true,
+        "handledMsg": "The File Save dialog was blocked",
+        "childControls": [
+          {
+            "name": "Save in",
+            "id": 1091,
+            "className": "Static",
+            "txtRegex": "Save &in:"
+          },
+          {
+            "name": "File name",
+            "id": 1090,
+            "className": "Static",
+            "txtRegex": "File &name:"
+          },
+          {
+            "name": "Save as Type",
+            "id": 1089,
+            "className": "Static",
+            "txtRegex": "Save as &type:"
+          },
+          {
+            "name": "Save",
+            "id": 1,
+            "className": "Button",
+            "txtRegex": "Save"
+          }
+        ]
+      },
+      {
+        "name": "File Save 2",
+        "action": 1,
+        "closeId": 2,
+        "className": "#32770",
+        "titleRegex": "[.|\\r|\\n]*",
+        "showHandledMsg": true,
+        "handledMsg": "The File Save dialog was blocked",
+        "childControls": [
+          {
+            "name": "Save",
+            "id": 1,
+            "className": "Button",
+            "txtRegex": "&Save"
+          },
+          {
+            "name": "Cancel",
+            "id": 2,
+            "className": "Button",
+            "txtRegex": "Cancel"
+          }
+        ]
+      },
+      {
+        "name": "Found New Hardware",
+        "action": 1,
+        "closeId": 2,
+        "className": "#32770",
+        "titleRegex": "Found New Hardware",
+        "showHandledMsg": true,
+        "handledMsg": "The Found New Hardware dialog was blocked",
+        "childControls": [
+          {
+            "name": "Cancel",
+            "id": 2,
+            "className": "Button",
+            "txtRegex": "[.|\\r|\\n]*"
+          }
+        ]
+      },
+      {
+        "name": "Found New Hardware 2",
+        "action": 2,
+        "closeId": 0,
+        "className": "#32770",
+        "titleRegex": "Found New Hardware",
+        "showHandledMsg": true,
+        "handledMsg": "The Found New Hardware dialog was blocked",
+        "childControls": []
+      },
+      {
+        "name": "LogMeIn Update",
+        "action": 1,
+        "closeId": 2,
+        "className": "#32770",
+        "titleRegex": "LogMeIn - Version Update",
+        "showHandledMsg": true,
+        "handledMsg": "The LogMeIn Update dialog was blocked",
+        "childControls": [
+          {
+            "name": "Remind Me Later",
+            "id": 2,
+            "className": "Button",
+            "txtRegex": "&Remind Me Later"
+          }
+        ]
+      },
+      {
+        "name": "Removable Disk Autorun",
+        "action": 1,
+        "closeId": 2,
+        "className": "#32770",
+        "titleRegex": "[.|\\r|\\n]*",
+        "showHandledMsg": true,
+        "handledMsg": "The Removable Disk Autorun dialog was blocked",
+        "childControls": [
+          {
+            "name": "Desc",
+            "id": 1001,
+            "className": "Static",
+            "txtRegex": "[.|\\r|\\n]*"
+          },
+          {
+            "name": "want",
+            "id": 1002,
+            "className": "Static",
+            "txtRegex": "What do you want Windows to do?"
+          },
+          {
+            "name": "OK",
+            "id": 1,
+            "className": "Button",
+            "txtRegex": "OK"
+          },
+          {
+            "name": "Cancel",
+            "id": 2,
+            "className": "Button",
+            "txtRegex": "Cancel"
+          }
+        ]
+      },
+      {
+        "name": "Run Command",
+        "action": 2,
+        "closeId": 0,
+        "className": "#32770",
+        "titleRegex": "Run",
+        "showHandledMsg": true,
+        "handledMsg": "The Run Command dialog was blocked",
+        "childControls": [
+          {
+            "name": "Browse",
+            "id": 12288,
+            "className": "Button",
+            "txtRegex": "Browse\\.{3}"
+          },
+          {
+            "name": "OK",
+            "id": 1,
+            "className": "Button",
+            "txtRegex": "OK"
+          },
+          {
+            "name": "Cancel",
+            "id": 2,
+            "className": "Button",
+            "txtRegex": "Cancel"
+          }
+        ]
+      },
+      {
+        "name": "Update Delivery Failure",
+        "action": 2,
+        "closeId": 0,
+        "className": "#32770",
+        "titleRegex": "Optional update delivery is not working",
+        "showHandledMsg": true,
+        "handledMsg": "The Windows Update Fail dialog was blocked",
+        "childControls": []
+      },
+      {
+        "name": "Windows Media Player",
+        "action": 2,
+        "closeId": 0,
+        "className": "WMPlayerApp",
+        "titleRegex": "[.|\\r|\\n]*",
+        "showHandledMsg": true,
+        "handledMsg": "Windows Media Player was blocked",
+        "childControls": []
+      },
+      {
+        "name": "IE",
+        "action": 2,
+        "closeId": 0,
+        "className": "IEFrame",
+        "titleRegex": "[.|\\r|\\n]*",
+        "showHandledMsg": true,
+        "handledMsg": "Internet Explorer was blocked",
+        "childControls": []
+      },
+      {
+        "name": "IE7 Close Tabs",
+        "action": 1,
+        "closeId": 6,
+        "className": "#32770",
+        "titleRegex": "Internet Explorer",
+        "showHandledMsg": false,
+        "handledMsg": "",
+        "childControls": [
+          {
+            "name": "Close Tabs",
+            "id": 6,
+            "className": "Button",
+            "txtRegex": "Close &Tabs"
+          }
+        ]
+      },
+      {
+        "name": "IE8 Close Tabs",
+        "action": 1,
+        "closeId": 30980,
+        "className": "#32770",
+        "titleRegex": "Internet Explorer",
+        "showHandledMsg": false,
+        "handledMsg": "",
+        "childControls": [
+          {
+            "name": "Close Tabs",
+            "id": 30980,
+            "className": "Button",
+            "txtRegex": "Close all &tabs"
+          }
+        ]
+      },
+      {
+        "name": "IE Help",
+        "action": 2,
+        "closeId": 0,
+        "className": "HH Parent",
+        "titleRegex": "Windows Internet Explorer",
+        "showHandledMsg": false,
+        "handledMsg": "",
+        "childControls": []
+      },
+      {
+        "name": "Windows Help",
+        "action": 2,
+        "closeId": 0,
+        "className": "HelpPane",
+        "titleRegex": "Windows Help",
+        "showHandledMsg": true,
+        "handledMsg": "Windows Help was blocked",
+        "childControls": []
+      },
+      {
+        "name": "Regedit",
+        "action": 2,
+        "closeId": 0,
+        "className": "RegEdit_RegEdit",
+        "titleRegex": "[.|\\r|\\n]*",
+        "showHandledMsg": true,
+        "handledMsg": "Regedit was blocked",
+        "childControls": []
+      }
+    ],
+    "includeFramesAclMask": 2,
+    "behold": false,
+    "protocolACL": {
+      "active": true,
+      "list": [],
+      "options": 4,
+      "blockMsg": "Protocol ACL blocked a URL"
+    },
+    "browsingACL": {
+      "defaultActions": 1,
+      "matchXmlHttpRequests": false,
+      "disableJsHistoryState": false,
+      "matchOnHashChange": false,
+      "navBlockPage": true,
+      "logPageContentTypes": 0,
+      "logIncludeDuplicateNavsFromRes": false,
+      "options": 4,
+      "blockMsg": "Browsing is confined to selected MacEwan University Library resources",
+      "domainList": [
+        {
+          "domain": "academic.eb.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "academic.oup.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "acm.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "advantage.marketline.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "anatomy.tv",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "aplicportal.ola.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "apps.brepolis.net",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "batesvisualguide.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "cine-med.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "curio.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "dc1.chass.utoronto.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "digital.films.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "ehrafarchaeology.yale.edu",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "ehrafworldcultures.yale.edu",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "ethos.bl.uk",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "find.galegroup.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "gateway.ovid.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "geoscan.ess.nrcan.gc.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "glnd.alexanderstreet.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "highwire.stanford.edu",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "ieeexplore.ieee.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "infotrac.galegroup.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "ingentaconnect.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "inphonet.albertahealthservices.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "iopscience.iop.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "isiknowledge.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "journals.cambridge.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "journals.sagepub.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "laws.justice.gc.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "lib.myilibrary.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "library.artstor.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "library.macewan.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "library.pressdisplay.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "libraryfiles.macewan.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "libraryredirect.macewan.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "link.springer.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "lion.chadwyck.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "macewan.kanopystreaming.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "macewan.naturalstandard.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "macewan.naxosmusiclibrary.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "macewan.naxosvideolibrary.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "medlineplus.gov",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "mergentonline.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "methods.sagepub.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "muse.jhu.edu",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "nextcanada.westlaw.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "oatd.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "onlinelibrary.wiley.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "ovidsp.ovid.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "pm.nlx.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "premium.oxforddictionaries.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "pubs.rsc.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "scholar.google.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "scifinder.cas.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "sda.chass.utoronto.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "search.alexanderstreet.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "search.eb.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "search.ebscohost.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "search.proquest.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "site.ebrary.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "sources.tannerritchie.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "stylebooks.thecanadianpress.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "ulrichsweb.serialssolutions.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "universitypublishingonline.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.accessscience.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.aina.ucalgary.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.bioone.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.blackwellreference.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.canadiana.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.canlii.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.cbr.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.collectionscanada.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.credoreference.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.cyc-net.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.dictionaryofeconomics.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.doaj.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.emeraldinsight.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.empire.amdigital.co.uk",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.englishhistoricaldocuments.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.erudit.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.hbcpnetbase.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.humanitiesebook.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.icpsr.umich.edu",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.jove.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.jstor.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.learnalberta.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.lexisnexis.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.loebclassics.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.lordisco.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.macewan.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.mathvids.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.myrxtx.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.ncbi.nlm.nih.gov",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.nfb.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.nlc-bnc.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.nrcresearchpress.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.oed.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.oxfordartonline.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.oxfordbibliographies.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.oxforddnb.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.oxfordhandbooks.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.oxfordmusiconline.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.oxfordreference.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.oxfordwesternmusic.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.popline.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.portal.euromonitor.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.psychiatryonline.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.qp.alberta.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.rocksbackpages.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.sagepub.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.sciencedirect.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.scopus.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.statcan.gc.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.statesmansyearbook.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.tandfonline.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www120.statcan.gc.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "bi.galegroup.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "clients1.ibisworld.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "cpps.brepolis.net",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "digitalscholarship-lib-unb-ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "digitalscholarship.lib.unb.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "dl-acm-org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "dl.acm.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "doaj-org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "doaj.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "dsm.psychiatryonline.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "ebookcentral-proquest-com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "ebookcentral.proquest.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "eco.canadiana.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "fod.infobase.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "geoscan.nrcan.gc.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "global.oup.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "globalaccess.sustainalytics.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "go.galegroup.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "guides.scholarsportal.info",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "hbcponline.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "highwire.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "ic.galegroup.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "literature.proquest.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "mathvids.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "naturalmedicines.therapeuticresearch.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "olabout.wiley.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "origin-scifinder.cas.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "psychiatryonline.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "quod-lib-umich-edu",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "quod.lib.umich.edu",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "resolver.lrc.macewan.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "search-proquest-com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "search.credoreference.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "search2-odesi-ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "search2.odesi.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "shakespeare.galegroup.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "us-sagepub-com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "us.sagepub.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "web.a.ebscohost.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "web.b.ebscohost.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "world.eb.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www-cambridge-org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.cambridge.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www-erudit-org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.anatomy.tv",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.bac-lac.gc.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.cas.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.highwirepress.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.utpjournals.press",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "thealbertalibrary.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "talonline.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.neoslibraries.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "catalogue.library.ualberta.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "neos.library.ualberta.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.servicealberta.gov.ab.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "krs.albertahealthservices.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.cauc.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "library.concordia.ab.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.concordiasem.ab.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.covenanthealth.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.gprc.ab.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.keyano.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.kingsu.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.lakelandcollege.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.newman.edu",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "library.norquest.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.northernlakescollege.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.oldscollege.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.rdc.ab.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "library.ualberta.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.vanguardcollege.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "mymacewan.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^.*\\.macewan\\.ca",
+          "isRegex": true,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^.*\\.ualberta\\.ca",
+          "isRegex": true,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.crossref.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.apastyle.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.mlahandbook.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.chicagomanualofstyle.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^.*\\.proquest\\.com",
+          "isRegex": true,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^.*\\.ebscohost\\.com",
+          "isRegex": true,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.abresearchportal.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "gdc.galegroup.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "galesupport.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^.*\\.galegroup\\.com",
+          "isRegex": true,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "ovidsp.tx.ovid.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "solomon.eena.alexanderstreet.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^.*\\.alexanderstreet\\.com",
+          "isRegex": true,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^.*\\.ovid\\.com",
+          "isRegex": true,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "worldscholar.galegroup.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "scholar.google.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "asp6new.alexanderstreet.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "galenet.galegroup.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.sciencemag.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^.*\\.sciencemag\\.org",
+          "isRegex": true,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.deslibris.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.cochranelibrary.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "ac.els-cdn.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "macewan.kanopy.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.artcyclopedia.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.actualsizer.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.safran-arts.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.cardonline.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.frontierlife.amdigital.co.uk",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "edu.knotia.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "clients1.ibisworld.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.migration.amdigital.co.uk",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^www\\..*\\.amdigital\\.co\\.uk",
+          "isRegex": true,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.openlibhums.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "orlando.cambridge.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.statista.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "teso.chadwyck.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "macewan.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.applyalberta.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "learnerregistry.ae.alberta.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "transferalberta.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "alberta.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.alberta.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^.*\\.gov\\.ab\\.ca",
+          "isRegex": true,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "servicealberta.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "canada.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^.*\\.canada\\.ca",
+          "isRegex": true,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^.*\\.gc\\.ca",
+          "isRegex": true,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "edmonton.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.edmonton.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.fulcrum.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "clients1.ibisworld.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "ieeexplore.ieee.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "iportal.usask.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "advisor.lww.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "procedures.lww.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "link.springer.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^.*\\.odesi\\.ca",
+          "isRegex": true,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^.*\\.scholarsportal\\.info",
+          "isRegex": true,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^.*\\.pressreader\\.com",
+          "isRegex": true,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^.*\\.pressdisplay\\.com",
+          "isRegex": true,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "r.prcdn.co",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "methods.sagepub.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "sso.cas.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "ovid.visiblebody.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "archive-it.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "infotrac.galegroup.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "go.gale.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.google-analytics.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "apis.google.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "callisto.ggsrv.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.gstatic.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "accounts.google.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "ssl.gstatic.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "galeapps.gale.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^.*\\.gale\\.com",
+          "isRegex": true,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "reader.elsevier.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^.*\\.nexisuni\\.com",
+          "isRegex": true,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^.*\\.lexis\\.com",
+          "isRegex": true,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^.*\\.lexisnexis\\.com",
+          "isRegex": true,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "id.elsevier.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^$",
+          "isRegex": true,
+          "defaultActions": 1,
+          "pageList": [
+            {
+              "page": "D:",
+              "isRegex": false,
+              "actions": 0
+            }
+          ]
+        },
+        {
+          "domain": "abresearchportal.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^.*\\.cyc-net\\.org",
+          "isRegex": true,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "hbcp.chemnetbase.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^.*\\.dramaonlinelibrary\\.com",
+          "isRegex": true,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "cyc-net.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^.*\\.canadiana\\.ca",
+          "isRegex": true,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "canadiana.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "biblioboard.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "emerald.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^.*\\.emerald\\.com",
+          "isRegex": true,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^.*\\.services\\.ibisworld\\.com",
+          "isRegex": true,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^.*\\.my\\.ibisworld\\.com",
+          "isRegex": true,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "ieeexplore.ieee.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^.*\\.ieee\\.org",
+          "isRegex": true,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^.*\\.ibisworld\\.ca",
+          "isRegex": true,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^.*\\.ibisworld\\.com",
+          "isRegex": true,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "archive.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "isiknowledge.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^.*webofscience\\.com",
+          "isRegex": true,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "macewan.nml3.naxosmusiclibrary.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "odesi.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "ncbi.nlm.nih.gov",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^.*\\.ncbi.nlm.nih\\.gov",
+          "isRegex": true,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "rcycp.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "royalsociety.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "sk.sagepub.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "srmo.sagepub.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "science.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^.*\\.isiknowledge\\.com",
+          "isRegex": true,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "sda.artsci.utoronto.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "link.springer.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "stephanus.tlg.uci.edu",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "open.umn.edu",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "mdpi.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "library.oapen.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "link.springer.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^.*\\.springer\\.com",
+          "isRegex": true,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^.*webofknowledge\\.com",
+          "isRegex": true,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "access.clarivate.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^.*\\.clarivate\\.com",
+          "isRegex": true,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "pdf.sciencedirectassets.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "ca.bbcollab.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "identity.macewan.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "^.*google\\.com",
+          "isRegex": true,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "docs.google.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "accounts.google.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "accounts.youtube.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "accounts.google.ca",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "apastyle.apa.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "style.mla.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.zotero.org",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.mendeley.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.qiqqa.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "jimmejardine.github.io",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "endnote.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "rise.articulate.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "drive.google.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "pomofocus.io",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "www.grammarly.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        },
+        {
+          "domain": "support.grammarly.com",
+          "isRegex": false,
+          "defaultActions": 0,
+          "pageList": []
+        }
+      ]
+    },
+    "scriptingACL": {
+      "defaultActions": 3,
+      "options": 4,
+      "blockMsg": "Scripting ACL blocked a URL",
+      "domainList": [
+        {
+          "domain": "^.*\\.pressreader\\.com.*$",
+          "isRegex": true,
+          "defaultActions": 7,
+          "pageList": []
+        },
+        {
+          "domain": "^.*\\.pressdisplay\\.com.*$",
+          "isRegex": true,
+          "defaultActions": 7,
+          "pageList": []
+        },
+        {
+          "domain": "^.*\\.r\\.prcdn\\.co.*$",
+          "isRegex": true,
+          "defaultActions": 7,
+          "pageList": []
+        }
+      ]
+    },
+    "basicAuthEntries": []
+  },
+  "userInterface": {
+    "showTaskbar": false,
+    "taskbarHeight": 40,
+    "hideSystemTaskbar": true,
+    "forceShowMainWindowChrome": false,
+    "mouseLockToPrimaryDisplay": false,
+    "spanAllDisplays": false,
+    "showBusyIndicatorDelayMs": 1700,
+    "DynamicStartPageSetts": {
+      "LogoUrl": null,
+      "LogoVerticalOption": 3,
+      "LogoHorizontalOption": 3,
+      "BackgroundUrl": null,
+      "StretchToFit": false,
+      "VerticalOffset": 0,
+      "HorizontalOffset": 0,
+      "Title": null,
+      "TitleColor": "rgba(0,0,0,1)",
+      "TitleSize": 8,
+      "Subtitle": null,
+      "SubtitleColor": "rgba(0,0,0,1)",
+      "SubtitleSize": 8,
+      "TextColor": "rgba(0,0,0,1)",
+      "TextSize": 8,
+      "Buttons": []
+    },
+    "HtmlVirtKBSettings": {
+      "Url": "[Default Keyboard]",
+      "TextColor": "rgba(255,255,255,1)",
+      "BackgroundColor": "rgba(34,34,34,1)",
+      "ThemeTextColor": "rgba(255,255,255,1)",
+      "ThemeColor": "rgba(66,66,66,1)",
+      "ActionTextColor": "rgba(150,150,150,1)",
+      "SpacebarColor": "rgba(210,210,210,1)",
+      "TextZoom": 100,
+      "ClickSoundEnabled": true,
+      "Languages": [
+        {
+          "Language": ""
+        }
+      ]
+    },
+    "pdfViewerSettings": {
+      "showPrintButton": false
+    },
+    "enableVirtualKeyboard": 0,
+    "virtualKeyboardWidth": 100.0,
+    "vkWidthUnitMeasureType": 0,
+    "virtualKeyboardHeight": 30.0,
+    "vkHeightUnitMeasureType": 0,
+    "vkShowType": 1,
+    "disableVkOnPhysical": false,
+    "physicalKeyboardMatch": "^(?!\\\\\\\\).*keyboard",
+    "virtualKeyboardDockedBottom": true,
+    "showVirtualKeyboardOverContent": false,
+    "virtualKeyboardIsFloating": false,
+    "virtualKeyboardIfFloatingNoBorders": false,
+    "vkFloatingOffset": {
+      "Width": 0.0,
+      "WidthUnitType": 1,
+      "Height": 0.0,
+      "HeightUnitType": 1
+    },
+    "vkRefocusElementMs": 300,
+    "vkCloseDelayMs": 500,
+    "vkNavDelayMs": 0,
+    "vkVisibleChangeAction": 0,
+    "hotVirtualKeyboardCmd": "\"C:\\Program Files\\HotVirtualKeyboard\\hvk.exe\"",
+    "hotVirtualKeyboardUseMachineSettings": true,
+    "maxTabWidth": 200,
+    "tabHeight": 35,
+    "tabStyle": {
+      "activeStyle": {
+        "textColor": "rgba(72,72,72,1)",
+        "backgroundColorStyle": {
+          "isGradient": true,
+          "gradientAngle": 90.0,
+          "color1": "rgba(220,220,220,1)",
+          "color2": "rgba(184,184,184,1)"
+        },
+        "topBorderColorStyle": {
+          "isGradient": false,
+          "gradientAngle": 90.0,
+          "color1": "rgba(220,220,220,1)",
+          "color2": "rgba(220,220,220,1)"
+        },
+        "font": "Segoe UI, 9pt"
+      },
+      "inactiveStyle": {
+        "textColor": "rgba(72,72,72,1)",
+        "backgroundColorStyle": {
+          "isGradient": true,
+          "gradientAngle": 90.0,
+          "color1": "rgba(186,186,186,1)",
+          "color2": "rgba(160,160,160,1)"
+        },
+        "topBorderColorStyle": {
+          "isGradient": false,
+          "gradientAngle": 90.0,
+          "color1": "rgba(255,255,240,1)",
+          "color2": "rgba(255,255,240,1)"
+        },
+        "font": "Segoe UI, 9pt, style=Italic"
+      }
+    },
+    "publicLogLevel": 1,
+    "hidePublicLogOnEndSess": true,
+    "showPublicLogOnNotifyClick": true,
+    "dockedUIElements": [
+      {
+        "toolbarSettings": {
+          "mergeBodyStyle": [],
+          "mergeAnchorStartStyle": [],
+          "mergeAnchorEndStyle": [],
+          "injectStyle": null,
+          "anchorStartControls": [
+            {
+              "indicatorType": 0,
+              "states": [
+                {
+                  "clickAction": 18,
+                  "image": "$$PROGDATA$$Toolbars/images/notloadingicon.png",
+                  "showLabel": false,
+                  "label": null,
+                  "href": null,
+                  "favicon": false
+                },
+                {
+                  "clickAction": 18,
+                  "image": "$$PROGDATA$$Toolbars/images/loadingicon.gif",
+                  "showLabel": false,
+                  "label": null,
+                  "href": null,
+                  "favicon": false
+                }
+              ],
+              "type": 0,
+              "mergeStyles": [
+                {
+                  "styleName": "padding-bottom",
+                  "styleValue": "5px"
+                }
+              ]
+            },
+            {
+              "State": {
+                "clickAction": 1,
+                "image": "$$PROGDATA$$Toolbars/images/back.png",
+                "showLabel": true,
+                "label": "Back",
+                "href": null,
+                "favicon": false
+              },
+              "type": 2,
+              "mergeStyles": [
+                {
+                  "styleName": "padding-bottom",
+                  "styleValue": "25px"
+                },
+                {
+                  "styleName": "padding-top",
+                  "styleValue": "0px"
+                }
+              ]
+            },
+            {
+              "State": {
+                "clickAction": 0,
+                "image": "$$PROGDATA$$Toolbars/images/forward.png",
+                "showLabel": true,
+                "label": "Forward",
+                "href": null,
+                "favicon": false
+              },
+              "type": 2,
+              "mergeStyles": [
+                {
+                  "styleName": "padding-bottom",
+                  "styleValue": "25px"
+                },
+                {
+                  "styleName": "padding-top",
+                  "styleValue": "0px"
+                }
+              ]
+            },
+            {
+              "indicatorType": 0,
+              "states": [
+                {
+                  "clickAction": 4,
+                  "image": "$$PROGDATA$$Toolbars/images/refresh.png",
+                  "showLabel": true,
+                  "label": "Reload",
+                  "href": null,
+                  "favicon": false
+                },
+                {
+                  "clickAction": 5,
+                  "image": "$$PROGDATA$$Toolbars/images/stop.png",
+                  "showLabel": true,
+                  "label": "Stop",
+                  "href": null,
+                  "favicon": false
+                }
+              ],
+              "type": 0,
+              "mergeStyles": [
+                {
+                  "styleName": "padding-bottom",
+                  "styleValue": "25px"
+                },
+                {
+                  "styleName": "padding-top",
+                  "styleValue": "0px"
+                }
+              ]
+            },
+            {
+              "State": {
+                "clickAction": 2,
+                "image": "$$PROGDATA$$Toolbars/images/home.png",
+                "showLabel": true,
+                "label": "Home",
+                "href": null,
+                "favicon": false
+              },
+              "type": 2,
+              "mergeStyles": [
+                {
+                  "styleName": "padding-bottom",
+                  "styleValue": "25px"
+                },
+                {
+                  "styleName": "padding-top",
+                  "styleValue": "0px"
+                }
+              ]
+            },
+            {
+              "State": {
+                "clickAction": 20,
+                "image": "$$USERDATA$$Toolbars\\images\\tab.png",
+                "showLabel": true,
+                "label": "New tab",
+                "href": "window.open('https://library.macewan.ca/', '_blank');",
+                "favicon": false
+              },
+              "type": 2,
+              "mergeStyles": [
+                {
+                  "styleName": "padding-bottom",
+                  "styleValue": "25px"
+                },
+                {
+                  "styleName": "padding-top",
+                  "styleValue": "0px"
+                }
+              ]
+            },
+            {
+              "hint": "",
+              "w": {
+                "Bool": false,
+                "Value": 400.0
+              },
+              "wUnitMeasureType": 1,
+              "type": 1,
+              "mergeStyles": [
+                {
+                  "styleName": "padding-bottom",
+                  "styleValue": "5px"
+                }
+              ]
+            }
+          ],
+          "anchorEndControls": [
+            {
+              "State": {
+                "clickAction": 19,
+                "image": "$$USERDATA$$Toolbars\\images\\usb.jpg",
+                "showLabel": true,
+                "label": "View USB",
+                "href": "file:///D:/",
+                "favicon": false
+              },
+              "type": 2,
+              "mergeStyles": [
+                {
+                  "styleName": "padding-bottom",
+                  "styleValue": "25px"
+                },
+                {
+                  "styleName": "padding-top",
+                  "styleValue": "0px"
+                }
+              ]
+            },
+            {
+              "State": {
+                "clickAction": 14,
+                "image": "$$PROGDATA$$Toolbars/images/volumedown.png",
+                "showLabel": true,
+                "label": "Volume down",
+                "href": null,
+                "favicon": false
+              },
+              "type": 2,
+              "mergeStyles": [
+                {
+                  "styleName": "padding-bottom",
+                  "styleValue": "25px"
+                },
+                {
+                  "styleName": "padding-top",
+                  "styleValue": "0px"
+                }
+              ]
+            },
+            {
+              "State": {
+                "clickAction": 13,
+                "image": "$$PROGDATA$$Toolbars/images/volumeup.png",
+                "showLabel": true,
+                "label": "Volume up",
+                "href": null,
+                "favicon": false
+              },
+              "type": 2,
+              "mergeStyles": [
+                {
+                  "styleName": "padding-bottom",
+                  "styleValue": "25px"
+                },
+                {
+                  "styleName": "padding-top",
+                  "styleValue": "0px"
+                }
+              ]
+            },
+            {
+              "State": {
+                "clickAction": 3,
+                "image": "$$PROGDATA$$Toolbars/images/logoff.png",
+                "showLabel": true,
+                "label": "Log off",
+                "href": null,
+                "favicon": false
+              },
+              "type": 2,
+              "mergeStyles": [
+                {
+                  "styleName": "padding-bottom",
+                  "styleValue": "25px"
+                },
+                {
+                  "styleName": "padding-top",
+                  "styleValue": "0px"
+                }
+              ]
+            }
+          ],
+          "evenlySpace": true
+        },
+        "url": "[Use Default Toolbar]",
+        "contextId": null,
+        "logStats": true,
+        "elementType": 1,
+        "name": "Main Toolbar",
+        "dock": 0,
+        "showState": 1,
+        "x": {
+          "Bool": false,
+          "Value": 0.0
+        },
+        "y": {
+          "Bool": false,
+          "Value": 0.0
+        },
+        "w": {
+          "Bool": false,
+          "Value": 60.0
+        },
+        "wUnitMeasureType": 1,
+        "h": {
+          "Bool": false,
+          "Value": 60.0
+        },
+        "hUnitMeasureType": 1,
+        "displayNumber": 1,
+        "overlap": 0,
+        "opticZoom": {
+          "Bool": false,
+          "Value": 100.0
+        },
+        "showLocation": 1
+      }
+    ],
+    "resetUiElementsAtSessionEnd": true,
+    "popupACL": {
+      "defaultActions": 0,
+      "options": 4,
+      "blockMsg": "Popup ACL blocked a URL",
+      "domainList": []
+    },
+    "mouseCursor": 0,
+    "hideMouseCursorDelayMsVal": 5000,
+    "allowSecondaryDisplayInteraction": false,
+    "disableDesktopCover": false,
+    "desktopCoverPollMs": 0,
+    "desktopCoverImagePath": "",
+    "desktopCoverImageLayout": "None",
+    "desktopCoverColor": null,
+    "logSelectedNodeChanged": false,
+    "messageDialogStyle": {
+      "titleFont": "Segoe UI, 15pt",
+      "messageFont": "Segoe UI, 10pt",
+      "buttonFont": "Segoe UI, 8pt",
+      "inputFont": "Segoe UI, 9pt",
+      "messageTextColor": "rgba(255,255,255,1)",
+      "titleTextColor": "rgba(255,255,255,1)",
+      "buttonTextColor": "rgba(170,170,170,1)",
+      "buttonBorderColor": "rgba(99,99,98,1)",
+      "borderColor": "rgba(150,150,150,1)",
+      "backgroundColor": "rgba(45,45,48,1)",
+      "footerBackgroundColor": "rgba(37,37,38,1)",
+      "inputBackgroundColor": "rgba(240,240,240,1)",
+      "inputBorderColor": "rgba(0,0,0,1)",
+      "progressColor": "rgba(0,173,239,1)"
+    },
+    "mediaCaptureSettings": {
+      "windowSize": {
+        "Width": 700.0,
+        "WidthUnitType": 1,
+        "Height": 600.0,
+        "HeightUnitType": 1
+      },
+      "windowTitle": null,
+      "initMsgText": null,
+      "captureBtnText": null,
+      "acceptBtnText": null,
+      "retryBtnText": null,
+      "cancelBtnText": null,
+      "defaultDeviceRegex": null,
+      "facingMode": null,
+      "showDeviceSelection": false,
+      "sourceWidth": 0,
+      "sourceHeight": 0,
+      "outputFileMimeType": "image/jpeg",
+      "outputFileExt": ".jpg",
+      "jpegQuality": 85,
+      "pageBackgroundColor": "rgba(255,255,255,1)",
+      "pageFontColor": "rgba(0,0,0,1)"
+    },
+    "driveBrowserSettings": {
+      "enabled": true,
+      "advancedMode": true,
+      "windowSize": {
+        "Width": 600.0,
+        "WidthUnitType": 1,
+        "Height": 600.0,
+        "HeightUnitType": 1
+      },
+      "windowTitle": "Choose a File",
+      "descText": "Choose a file from the list below.",
+      "windowTitleDirMode": "Choose a Directory",
+      "descTextDirMode": "Navigate into your directory of choice.",
+      "chooseBtnText": "Choose",
+      "cancelBtnText": "Cancel",
+      "nameHeaderText": "Name",
+      "sizeHeaderText": "Size",
+      "modTimeHeaderText": "Modify Time",
+      "defaultRoot": {
+        "path": "D:\\",
+        "nameInList": "Removable Disk",
+        "showInList": true,
+        "allowWrite": true,
+        "dirFilter": {
+          "useDefault": true,
+          "isRegex": false,
+          "filter": null
+        },
+        "fileFilter": {
+          "useDefault": true,
+          "isRegex": false,
+          "filter": null
+        }
+      },
+      "roots": [],
+      "dateFormat": "YYYY-MM-DD HH:mm:ss",
+      "showAllRemovableDrives": true,
+      "allowWriteAllRemovableDrives": true,
+      "showDriveLabels": true,
+      "pageBackgroundColor": "rgba(255,228,196,1)",
+      "pageFontColor": "rgba(0,0,0,1)",
+      "descBackgroundColor": "rgba(255,255,255,1)",
+      "descFontColor": "rgba(0,0,0,1)",
+      "browseBackgroundColor": "rgba(255,255,255,1)",
+      "browseFontColor": "rgba(0,0,0,1)",
+      "browseHeaderBackgroundColor": "rgba(222,184,135,1)",
+      "browseHeaderFontColor": "rgba(139,69,19,1)",
+      "browseBorderColor": "rgba(211,211,211,1)",
+      "browseSelectionColor": "rgba(128,128,128,1)",
+      "browseSelectionFontColor": "rgba(255,255,255,1)"
+    },
+    "contextMenuSettings": {
+      "useDefaultEngineMenu": false,
+      "enabled": true,
+      "items": []
+    },
+    "kioClean": {
+      "enabled": false,
+      "cleanWarnMins": 110,
+      "cleanErrMins": 120,
+      "cleanWarnActiveMins": 15,
+      "cleanErrActiveMins": 25,
+      "cleanWarnSessions": 1,
+      "cleanErrSessions": 3,
+      "idleCleanOperationSecs": 20,
+      "idleCleanOperationWarnSecs": 10
+    }
+  },
+  "devices": {
+    "sCardReaderSharedMode": false,
+    "deviceList": [],
+    "evokeVmcVendDelay": 0
+  },
+  "kwServer": {
+    "serverUrl": "https://www.example.com/KioWare_Server",
+    "sslIgnoreFlags": 0,
+    "useSslIgnoreFlagsForDownloads": 0,
+    "kwsClientCert": {
+      "enabled": false,
+      "location": 1,
+      "thumbprint": ""
+    },
+    "siteName": "Default Site",
+    "heartbeats": {
+      "heartbeatInterval": {
+        "Bool": false,
+        "Value": 6000000000
+      },
+      "wmiItems": [],
+      "eventLogMonitors": [
+        {
+          "logName": "KW Platform",
+          "matchAction": 1,
+          "entryTypes": {
+            "Bool": true,
+            "Value": {
+              "information": false,
+              "warning": false,
+              "error": true
+            }
+          },
+          "entryMaxAge": {
+            "Bool": true,
+            "Value": 2592000000000
+          },
+          "sourceFilterRegex": null,
+          "messageFilterRegex": null
+        },
+        {
+          "logName": "KW Platform",
+          "matchAction": 0,
+          "entryTypes": {
+            "Bool": true,
+            "Value": {
+              "information": false,
+              "warning": true,
+              "error": true
+            }
+          },
+          "entryMaxAge": {
+            "Bool": true,
+            "Value": 12096000000000
+          },
+          "sourceFilterRegex": null,
+          "messageFilterRegex": null
+        },
+        {
+          "logName": "Application",
+          "matchAction": 0,
+          "entryTypes": {
+            "Bool": true,
+            "Value": {
+              "information": false,
+              "warning": true,
+              "error": true
+            }
+          },
+          "entryMaxAge": {
+            "Bool": true,
+            "Value": 12096000000000
+          },
+          "sourceFilterRegex": null,
+          "messageFilterRegex": null
+        },
+        {
+          "logName": "System",
+          "matchAction": 0,
+          "entryTypes": {
+            "Bool": true,
+            "Value": {
+              "information": false,
+              "warning": true,
+              "error": true
+            }
+          },
+          "entryMaxAge": {
+            "Bool": true,
+            "Value": 12096000000000
+          },
+          "sourceFilterRegex": null,
+          "messageFilterRegex": null
+        }
+      ]
+    },
+    "serverCommands": {
+      "enabled": false,
+      "screenShotQuality": 90,
+      "screenShotScale": 100
+    },
+    "statsLogging": {
+      "enabled": false,
+      "uploadOnSessionEnd": true,
+      "uploadInterval": {
+        "Bool": true,
+        "Value": 6000000000
+      },
+      "demDataEnabled": false,
+      "demDeviceName": null,
+      "demSessionDelay": 0
+    },
+    "appLogging": {
+      "enabled": false,
+      "uploadOnSessionEnd": true,
+      "uploadInterval": {
+        "Bool": true,
+        "Value": 6000000000
+      },
+      "demDataEnabled": false,
+      "demDeviceName": null,
+      "demSessionDelay": 0
+    },
+    "contentUpdating": {
+      "enabled": false,
+      "updateRoot": "C:\\inetpub\\wwwroot\\KioWareContent",
+      "updateInterval": 36000000000,
+      "maxDownloadAttempts": 5,
+      "executeActionTimeoutMillis": 0,
+      "preApplyUpdateScript": null,
+      "preApplyUpdateScriptWaitMs": 30000,
+      "preApplyUpdateScriptSuccessCode": 0,
+      "preApplyUpdateScriptReturnHandling": 1,
+      "postApplyUpdateScript": null,
+      "postApplyUpdateScriptWaitMs": 30000,
+      "postApplyUpdateScriptSuccessCode": 0,
+      "postApplyUpdateScriptReturnHandling": 1,
+      "postNotifyCompleteScript": null,
+      "postNotifyCompleteScriptWaitMs": 30000,
+      "postNotifyCompleteScriptSuccessCode": 0,
+      "postNotifyCompleteScriptReturnHandling": 1,
+      "fileDownloadTimeoutMs": -1,
+      "listRetryWaitMsMin": 1000,
+      "listRetryWaitMsMax": 30000,
+      "statusProgressUploadIntervalMs": -1
+    }
+  },
+  "communication": {
+    "adsiCF": {
+      "engineType": 0,
+      "debug": false,
+      "windowTitle": "Video Call",
+      "windowColor": "rgba(0,0,0,1)",
+      "controlsPanelColor": "rgba(255,255,255,1)",
+      "bordersColor": "rgba(204,204,204,1)",
+      "windowClientSize": {
+        "Width": 600.0,
+        "WidthUnitType": 1,
+        "Height": 500.0,
+        "HeightUnitType": 1
+      },
+      "windowSystemDisplayNbr": 0,
+      "windowShowStyle": 0,
+      "videoDeviceRegex": "[System Default]",
+      "isRegexVideoDevice": false,
+      "matchVideoDeviceById": false,
+      "speakerDeviceRegex": "[System Default]",
+      "isRegexSpeakerDevice": false,
+      "matchSpeakerDeviceById": false,
+      "micDeviceRegex": "[System Default]",
+      "isRegexMicDevice": false,
+      "matchMicDeviceById": false,
+      "speakerVolume": 90.0,
+      "micVolume": 100.0,
+      "controlsSettings": {
+        "anchorStartControls": [
+          {
+            "type": 5
+          },
+          {
+            "type": 3
+          },
+          {
+            "type": 2
+          },
+          {
+            "type": 6
+          },
+          {
+            "type": 4
+          },
+          {
+            "type": 7
+          },
+          {
+            "type": 1
+          }
+        ],
+        "anchorEndControls": []
+      },
+      "spacerControlWidth": 10,
+      "ringSoundOption": 3,
+      "AllowIncomingInAttractMode": false,
+      "incomingCallHandling": 0,
+      "agoraEngine": {
+        "auth": null,
+        "kioCallServerUrl": "wss://app.kiocall.com:1443/ws",
+        "previewMaxSize": {
+          "Width": 120.0,
+          "WidthUnitType": 1,
+          "Height": 100.0,
+          "HeightUnitType": 1
+        },
+        "videoProfile": 30,
+        "swapVideoProfileWH": false
+      }
+    }
+  },
+  "accessibility": {
+    "screenReader": {
+      "engineType": 0,
+      "jawsEngine": {
+        "exePath": null,
+        "exeArgs": "/default /noddihooks"
+      }
+    },
+    "screenMagnifier": {
+      "engineType": 0,
+      "magLevel": 0.0,
+      "zoomTextEngine": {
+        "exePath": "",
+        "exeArgs": "",
+        "zoomWindowType": "",
+        "pointerScheme": "",
+        "caretScheme": "",
+        "colorScheme": "",
+        "focusScheme": "",
+        "fontEnhanceType": "",
+        "dualMonitorMode": ""
+      }
+    },
+    "kioTouch": {
+      "enabled": false,
+      "autoSessions": false,
+      "runElevated": true,
+      "debug": false,
+      "enableKeyboard": false,
+      "pinLength": 0,
+      "companyId": null,
+      "authKey": null,
+      "sessionEndUrl": null,
+      "displayText": "Touch and drag here to move the mouse pointer on the kiosk screen."
+    }
+  }
+}

@@ -1,0 +1,1 @@
+This is your data directory.  Nothing in here will be deleted during an upgrade or uninstall.

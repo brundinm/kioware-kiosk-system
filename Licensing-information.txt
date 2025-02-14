@@ -1,0 +1,71 @@
+*** Licensing information ***
+
+MRB
+Sat 08-Jun-2019
+
+GM-M003994.ad.macewan.ca
+3rd floor, east, Building 6
+System Code: HFD2T-2N8TU
+Company Name: MacEwan University
+License Key: Y37L-M6LX-8H3G-2QS8
+Model: Lite
+Transaction Number: 194125288
+Authorization Code: 12132017
+System ID: GM-M003994
+
+GM-M003954.ad.macewan.ca
+3rd floor, west, Building 7
+System Code: AM7ZX-4R6YD
+Company Name: MacEwan University
+License Key: T3GD-V3N7-TLRD-79XU
+Model: Lite
+Transaction Number: 541906577
+Authorization Code: 12132017
+System ID: GM-M003954
+
+PAC-CC-003.ad.macewan.ca
+2nd floor, left [south], Building 7
+System Code: DWRM-3XFL
+Company Name: MacEwan University
+License Key: U59B-GX6K-7L7D-U9XX
+Model: Lite
+Transaction Number: 382304219
+Authorization Code: 952017
+System ID: PAC-CC-003
+
+PAC-CC-004.ad.macewan.ca
+2nd floor, right [north], Building 7
+System Code: DWRM-3XFL
+Company Name: MacEwan University
+License Key: BVJZ-6DCU-5DYK-NC8D
+Model: Lite
+Transaction Number: 571763653
+Authorization Code: 10302017
+System ID: PAC-CC-004
+
+*****
+
+MRB
+Tue 18-Oct-2022
+
+Information above is out-of-date.  New licensing information is below.
+
+GM-M003954.ad.macewan.ca
+2nd floor, right, Building 7
+System Code: AM7ZX-4R6YD
+Company Name: MacEwan University
+License Key: T3GD-V3N7-TLRD-79XU
+Model: Lite
+Transaction Number: 541906577
+Authorization Code: 12132017
+System ID: GM-M003954
+
+GM-M003955.ad.macewan.ca
+2nd floor, Writing Centre, Building 6
+System Code: HFD2T-2N8TU
+Company Name: MacEwan University
+License Key: Y37L-M6LX-8H3G-2QS8
+Model: Lite
+Transaction Number: 194125288
+Authorization Code: 12132017
+System ID: GM-M003955

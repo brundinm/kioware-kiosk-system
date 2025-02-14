@@ -1,0 +1,174 @@
+﻿{
+  "guidedSetupState": {
+    "CurrentPage": {
+      "Url": null
+    },
+    "Landing": {},
+    "Select": {
+      "ModeType": 1
+    },
+    "InteractiveSelect": {
+      "InteractiveModeType": 1
+    },
+    "StartPage": {
+      "Url": null
+    },
+    "Browsing": {
+      "IsBeingRerun": true,
+      "GetExistingAclActionsItems": [
+        {
+          "Value": 0,
+          "Description": "No ACL Entries",
+          "Children": []
+        },
+        {
+          "Value": 1,
+          "Description": "Keep Existing ACL Entries",
+          "Children": []
+        },
+        {
+          "Value": 2,
+          "Description": "Configure ACL",
+          "Children": []
+        }
+      ],
+      "ExistingAclAction": 0,
+      "GetBrowsingACLPermissionTypes": [
+        {
+          "Value": 0,
+          "Description": "Allow List",
+          "Children": []
+        },
+        {
+          "Value": 1,
+          "Description": "Block List",
+          "Children": []
+        }
+      ],
+      "Type": 0,
+      "Domains": []
+    },
+    "Popup": {
+      "SetupPopupMode": 2
+    },
+    "SessionEnd": {
+      "SetAttract": false,
+      "SetInactivity": false,
+      "SetTimed": false,
+      "TimedSeconds": 600,
+      "InactivitySeconds": 120,
+      "RotationSeconds": 15,
+      "Handle": 1,
+      "SetupAttractModeTypeValues": [
+        {
+          "Value": 1,
+          "Description": "Local Folder Contents",
+          "Children": []
+        },
+        {
+          "Value": 2,
+          "Description": "Web Page List",
+          "Children": []
+        }
+      ],
+      "AttractType": 1,
+      "AttractPages": [],
+      "WebPages": []
+    },
+    "NonInteractive": {
+      "RotationSeconds": 15,
+      "Handle": 1,
+      "SetupAttractModeTypeValues": [
+        {
+          "Value": 1,
+          "Description": "Local Folder Contents",
+          "Children": []
+        },
+        {
+          "Value": 2,
+          "Description": "Web Page List",
+          "Children": []
+        }
+      ],
+      "AttractType": 1,
+      "AttractPages": [],
+      "WebPages": []
+    },
+    "SetupToolbar": {
+      "IsBeingRerun": true,
+      "GetExistingToolbarsActionsItems": [
+        {
+          "Value": 0,
+          "Description": "No Toolbars",
+          "Children": []
+        },
+        {
+          "Value": 1,
+          "Description": "Keep Existing Toolbars",
+          "Children": []
+        },
+        {
+          "Value": 2,
+          "Description": "Configure a Toolbar",
+          "Children": []
+        }
+      ],
+      "ExistingToolbarAction": 0,
+      "Controls": 63
+    },
+    "WebPage": {
+      "LogoUrl": "C:\\ProgramData\\KioWare Client\\Portal\\images\\kw_logo.png",
+      "BackgroundUrl": "C:\\ProgramData\\KioWare Client\\Portal\\images\\bg_kioware.png",
+      "VerticalOffset": 0,
+      "HorizontalOffset": 0,
+      "Title": null,
+      "TitleColor": "rgba(0,0,0,1)",
+      "TitleSize": 24,
+      "Subtitle": null,
+      "SubtitleColor": "rgba(0,0,0,1)",
+      "SubtitleSize": 18,
+      "TextColor": "rgba(0,0,0,1)",
+      "TextSize": 12
+    },
+    "SetupKioCall": {
+      "AuthKey": null,
+      "Username": null,
+      "Password": null,
+      "CallHandlingType": 1
+    },
+    "Portal": {
+      "Buttons": []
+    },
+    "Video": {
+      "UseLocalFiles": false,
+      "Buttons": []
+    },
+    "ButtonsKioCall": {
+      "Buttons": []
+    },
+    "SystemManagementSettings": {
+      "SetupWindowsSystemSettings": "L63o0ZfbzvxG8noj7CsY73nI6sUn+UMDQNBUOYhnQns++Fvs8eHweuY862scbr9xYaRlCIMLQbVB2XT1uTpmQXPzuuSmCioUmSsHFcpVQ0fbPW6pCa646CBUv7Hy3twnpUki/TDGW7dbCQDF38KBAlYITPiqzsRbiGbVSX0Odj+neNRjQXfE3zcjWvVjAMjucoyfvAWIHI4=",
+      "Shell": false
+    },
+    "Keyboard": {
+      "SetRecommended": false,
+      "VirtualKeyboardActive": false
+    },
+    "Exiting": {}
+  },
+  "ClosedMessageIds": [],
+  "ConfigToolServiceUrl": "7iHH621r0NR5LadzIoNyVNFhzhe9jMmEqA9u/s17iBBM0Tj4vpnnydFssmYhCit9uZV+3ArvalXcyI30O9pdptmhg1daXfWfce1YJYVeaYGBIa8J6GFpgpdWdg==",
+  "MessageContactUrl": "bFZRXAEAAACQ30hz7TcpfFvkD15HJLAzsL4AQOzITFwQNZ7NtNxEclq07OCO0E7uo5gmQs29TLOyfcdnIDMYsq/3VdIo3h3xOJNvJ2XjAAnxAYBxh+8=",
+  "ShowMessageDetail": false,
+  "DisableDefaultLayout": false,
+  "DisableAutoSave": false,
+  "ShowDeveloperSettings": true,
+  "WindowHeight": 728,
+  "WindowWidth": 850,
+  "WindowLeft": 231,
+  "WindowTop": 0,
+  "WindowStartupLocation": 0,
+  "RenderOptions": 1,
+  "LastExportPath": "",
+  "LastExportOptions": 3
+}

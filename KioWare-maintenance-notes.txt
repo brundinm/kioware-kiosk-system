@@ -1,0 +1,137 @@
+*** KioWare maintenance notes ***
+
+MRB
+Tue 25-Jun-2019
+
+There are three principal tasks involved with KioWare maintenance:
+
+     * Updating the KioWareClientSettings.kwconfig configuration file to
+       reflect new additions to the Access Control List (ACL)
+     * Upgrading the KioWare software version; this is only occasionally
+       done, usually annually
+     * Reviewing the Windows Event Viewer logs to either troubleshoot
+       problems or to derive user session activity statistics
+
+Copying over the new KioWareClientSettings.kwconfig file can be done either
+at the PAC, or remotely.  Upgrading the KioWare software has to be done at
+the PAC.
+
+(1) To update the KioWareClientSettings.kwconfig configuration file
+
+To update the ACL list in the config file, (a) first, add new entries to the
+ACL on your local development KioWare config file 
+(KioWareClientSettings.kwconfig), then copy the revised config file to
+each PAC, either (b) at the PAC or (c) remotely using the RDP client
+
+a. To add new entries to the ACL
+
+* To update the ACL, use the latest KioWareClientSettings.kwconfig file which
+is the master file in the GitHub KioWare repository; copy the GitHub master
+file of KioWareClientSettings.kwconfig to the directory path of
+C:\ProgramData\KioWare Client on your local development unlicensed version of
+KioWare; note: the unlicensed version of KioWare will occasionally display a
+red nagware screen for 15 seconds indicating the KioWare software is unlicensed
+
+* Note: the basic procedure is to have three applications open: a browser,
+the KioWare Config Tool, and the KioWare application; one then toggles back
+and forth between the three applications, identifying database links
+that are not in the KioWare ACL, and then adding the appropriate domain
+name URL to the ACL list; a useful technique is when in the KioWare
+application in kiosk mode, to test several database links in one go
+by clicking on several of them sequentially to open up several tabs,
+and then looking at each tab to see which pages didn't render
+
+* Then launch a browser such as Google Chrome
+
+* Then launch the KioWare Config Tool, and navigate to the ACL list:
+Security -> and then in the Access Lists pane, click on the "Browsing
+Access" button; new entries are added by clicking on the New Domain
+button; URLs can either be render in the default straight string "CONT"
+mode, or clicking on "CONT" will change it to "REGX" so that you can
+provide a regular expression pattern for the URL
+
+* Then launch your unlicensed KioWare application, and step through the
+A-Z list of databases in KioWare kiosk mode, identifying possible links
+that are not in the ACL by pages that don't render
+
+* For pages that don't load, toggle to a regular browser (e.g., Google Chrome)
+and confirm the database website link is up and valid
+
+* If the website is valid, then copy the website URL to the clipboard
+
+* Then toggle back to the KioWare Configuration Tool to paste in and add
+the missing website domain to the ACL list, making sure that the string is
+only the domain (e.g., no "http://" or "https://" protocols, or directory
+paths after the domain, etc.)
+
+b. To copy the config file at the PAC
+
+* Log out of kiosk mode
+key combination: Alt-F4
+password: 1971
+
+* You can now log in with your own username and password
+
+* Copy your own modified configuration file and paste it in each of the four
+public workstations in the following directory path: 
+C:\ProgramData\KioWare Client\KioWareClientSettings.kwconfig
+
+* Finally, reboot the PAC machine
+
+* Note: if you ever need to log into the publicaccess account from the
+login prompt, the username and password are the following:
+username: publicaccess
+password: puBl1kacce55F3 (fourth and fifth characters are "el" followed
+by "one")
+
+c. To copy the config file remotely using the Remote Desktop Connection (RDP)
+client
+
+* To use the Remote Desktop Connection client
+- In the search bar type "remote desktop connection"
+- Click on "Remote Desktop Connection" to launch Remote Desktop
+- Connect to one of the four public access workstations:
+GM-M003994.ad.macewan.ca (3rd floor, east, Building 6)
+GM-M003954.ad.macewan.ca (3rd floor, west, Building 7)
+PAC-CC-003.ad.macewan.ca (2nd floor, left [south], Building 7)
+PAC-CC-004.ad.macewan.ca (2nd floor, right [north], Building 7)
+
+* Copy your own modified configuration file and paste it in each of the four
+public workstations in the following directory path: 
+C:\ProgramData\KioWare Client\KioWareClientSettings.kwconfig
+
+* The PACs will automatically reboot early Monday morning; if no one is
+at the PAC, you can reboot the machine remotely
+
+Note: to remove entries from the Remote Desktop Connection Computer box in
+the Windows Remote Desktop Connection client, start Registry Editor,
+and then click the following registry key:
+HKEY_CURRENT_USER\Software\Microsoft\Terminal Server Client\Default
+Entries appear as MRUnumber, and are visible in the right pane. To
+delete an entry, right-click it, and then click Delete
+
+(2) To upgrade the KioWare software version
+- At the PAC, exit kiosk mode
+- Log into your own account
+- Double click on the KioWareClientSetup.exe executable
+- Don't need to configure anything, just step through dialog boxes
+- Reboot the computer
+
+(3) To review the Windows Event Viewer logs
+- Log into the PAC either at the PAC or remotely
+- Type "event viewer"
+- In Event Viewer, double click on "Applications and Services Logs"
+- Click on the "KW Platform" entry; entries are in reverse chronological order
+- Click on the last date you want to copy, then scroll down to the first date
+in the range you want to copy, hold the shift key down, then click on the
+last date in the date range you want to copy
+- Right click on the highlighted range
+- Select Copy, and then "Copy Details as Text"
+- Paste into a text editor and then save the file
+- Parse and process the file to determine number of user sessions in a
+particular time frame (e.g., per week, per month), the median time for a user
+session, the longest session, the busiest week of the year, the busiest month
+of the year, etc.
+- Note: can copy processed user session frequency counts statistics for each
+month for each PAC into a spreadsheet for a better visualization and
+comparative purposes of the statistical data
