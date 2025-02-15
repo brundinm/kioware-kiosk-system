@@ -15,33 +15,32 @@ access computer (PAC):
 (1) To install KioWare kiosk software
 * Log into the workstation using own MacEwan University network account
 and password
-* Create a new local user account called "publicaccess"
+* Create a new local user account called "**********"
 - Type "user accounts" and hit Enter
 - In the "Other users" section, click the "+" sign for "Add someone else
 to this PC"
 - Click on "I don't have this person's sign-in information"
 - Click on "Add a user without a Microsoft account"
 - In the "User name" textbox, make the username "publicaccess"
-- For the password for the public access account, make it "puBl1kacce55F3"
-("el" followed by "one")
+- For the password for the ********** account, make it "**********"
 - Click "Next"
 - Sign out of your network account on the PAC, and log in with the new
-local publicaccess account
-- Sign out of the local publicaccess account, and log back in with your
+local ********** account
+- Sign out of the local ********** account, and log back in with your
 network account
 * Add new entries to the Windows registry to enable automatic logging into the
-newly created account called "publicaccess"
+newly created account called "**********"
 - Navigate to the following Windows registry key:
 Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\
 Winlogon
 - In the Winlogon key, create a new String Value; rename this new string
 "DefaultUserName"
 - Double click on DefaultUserName and give it a "Value data" entry of
-"ad\publicaccess"
+"**********"
 - In the Winlogon key, create a new String Value; rename this new string
 "DefaultPassword"
 - Double click on DefaultPassword and give it a "Value data" entry of
-"puBl1kacce55F3" ("el" followed by "one")
+"**********"
 * Install the KioWare software application
 - Double click on KioWareClientSetup.exe executable file
 - Step through the dialog screens to finish installing KioWare; don't need to
@@ -79,30 +78,29 @@ explorer.exe
 - Click on "System Settings" tab
 - In the "Windows AutoLogon Settings" section, click the slider to "ON"
 - Again in the Windows AutoLogon Settings section, in the Username and
-Password boxes add "ad\publicaccess" as the username and provide the
-publicaccess account's password "puBl1kacce55F3" ("el" followed by "one");
+Password boxes add "**********" as the username and provide the
+********** account's password "**********";
 click the "Test AutoLogon" button to see if the credentials are correct
 - In the "Utility to Change User Settings (including their Shell)" pane,
-provide the username, which is "ad.macewan.ca\publicaccess", and provide
-the "publicaccess" account's password, "puBl1kacce55F3" ("el" followed by
-"one")
+provide the username, which is "**********", and provide
+the "**********" account's password, "**********"
 - In the next dialog box, select the second radio button option to make
 KioWare the shell process
 - Reboot the workstation; workstation will automatically log into the
-"publicaccess" acount, and automatically launch KioWare as the default
+"**********" acount, and automatically launch KioWare as the default
 shell process
 
 (2) To add a user to the Administrator Group
 * Log out of KioWare kiosk mode, and then log in with your network account
-- Key combination to get exit action code dialog box: Alt-F4
-- Exit action code password to exit KioWare: 1971
+- Key combination to get exit action code dialog box: ****
+- Exit action code password to exit KioWare: **********
 - Log in with your own network username and password
 * Run ==> compmgmt.msc
 * From the Computer Management screen that opens, go to
 Local Users and Groups ==> Groups ==> Administrators
 * Then click the Add button
-- The users with Administrator Group privileges are ad\brundinm,
-and ad\mccreadys
+- The users with Administrator Group privileges are **********,
+and **********
 
 (3) To enable remote access
 - Type remote in the search box
@@ -111,8 +109,8 @@ and ad\mccreadys
 remote connections to this computer" is selected
 - Click on the "Select Users..." button, then click on the "Add" button
 to add users who can remotely access the public access workstation
-- The users with remote access privileges are ad\brundinm, and
-ad\mccreadys
+- The users with remote access privileges are **********, and
+**********
 
 (4) To enable concurrent connections
 * There used to be two ways to enable concurrent connections: modifying
@@ -130,8 +128,8 @@ termsrv.dll.orig.bak
 - Copy PAC termsrv.dll to your own computer, where you will have full
 rights to the file
 - Use HxD hex editor to search and replace a string pattern
-search: 39 81 3C 06 00 00 0F 84 3B 2B 01 00
-replace: B8 00 01 00 00 89 81 38 06 00 00 90
+search: **********
+replace: **********
 Make sure in "Search -> Replace" that you click on Hex-values tab before
 you search and replace 
 Note: the latest (Windows 10 Version 1709 [OS Build 16299.1150])
@@ -148,7 +146,7 @@ give yourself full control, do the following:
 - Click Advanced button
 - Click "Change" link
 - Click Advanced button
-- Provide your name in the text area pane, e.g., "brundinm"
+- Provide your name in the text area pane, e.g., "**********"
 - Click OK, and then click OK again; need to completely exit from all
 dialog boxes to have ownership of the file
 - To next grant full access control over the file to your account, do
@@ -157,7 +155,7 @@ the following:
 - Click Advanced button
 - Under the Permissions tab, click the Add button
 - Click on the "Select a principal" link
-- Provide your name in the text area pane, e.g., "brundinm"
+- Provide your name in the text area pane, e.g., "**********"
 - Click OK
 - In the Permission Entry dialog box in the "Basic permissions:" pane,
 select the "Full control" checkbox
