@@ -67,8 +67,8 @@ paths after the domain, etc.)
 b. To copy the config file at the PAC
 
 * Log out of kiosk mode
-key combination: Alt-F4
-password: 1971
+key combination: ****
+password: **********
 
 * You can now log in with your own username and password
 
@@ -80,9 +80,8 @@ C:\ProgramData\KioWare Client\KioWareClientSettings.kwconfig
 
 * Note: if you ever need to log into the publicaccess account from the
 login prompt, the username and password are the following:
-username: publicaccess
-password: puBl1kacce55F3 (fourth and fifth characters are "el" followed
-by "one")
+username: **********
+password: **********
 
 c. To copy the config file remotely using the Remote Desktop Connection (RDP)
 client
